@@ -1,0 +1,16 @@
+Remove the files listed that is not tracked. To learn check https://stackoverflow.com/questions/11637686/git-pull-error-the-following-untracked-working-tree-files-would-be-overwritte
+
+My guess is that someone else has accidentally committed this file. How to resolve this:
+
+Remove your local .pyc file
+
+rm rtb_redis_connections/redis_connections.pyc
+Do the pull
+
+git pull
+Remove the file from git and push up the changes
+
+git rm rtb_redis_connections/redis_connections.pyc
+git commit -m "Remove pyc file"
+git push origin master
+Assuming that you are working on the master branch that is.
