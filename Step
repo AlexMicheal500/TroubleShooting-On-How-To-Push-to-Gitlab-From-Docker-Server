@@ -1,6 +1,6 @@
 rm -rf .git #to remove git and restart 
 git init .
-git branch -m master main
+git branch -m master main OR git checkout -b main
 git remote add origin https://139.144.16.184/gitlab-instance-ce4e845e/web.git
 git remote -v
 git pull origin main
